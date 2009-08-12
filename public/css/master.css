@@ -28,7 +28,7 @@ object { display: block; }
 
 
 body {
-	color: #f0f0f0;
+	color: #B1F1FF;
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Hevetica, "sans-serif";
@@ -36,9 +36,9 @@ body {
 	line-height: 10px;
 }
 
-a:link {color: #99FF00; text-decoration: none}
-a:visited {color: #99FF00;}
-a:hover,a:focus {color: #CCFF00; text-decoration: none;}
+a:link {color: #45FEF6; text-decoration: none}
+a:visited {color: #45FEF6;}
+a:hover,a:focus {color: #0FE7F5; text-decoration: none;}
 a:active {}
 
 .button {
@@ -80,11 +80,7 @@ ul {
 }
 
 p {
-	line-height: inherit;
-	margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
+	line-height: 1.6em;
 	margin: 0;
 }
 
@@ -95,9 +91,19 @@ h1, h2, h3, h4, h5, h6 {
 	#header_wrapper h1 {
 		float: left;
 	}
+	
+h2 {
+	border-bottom: 1px dotted #303030;
+	display: block;
+	font-size: 42px;
+	height: 46px;
+	margin: 0 0 .5em;
+	width: 96%;
+}
 
 #content_wrapper {
-	background: #202020;
+	background: #1c1c1c;
+	padding: 2em;
 }
 
 .copyright {
@@ -119,18 +125,37 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	width: 75%;
 }
+	
+	.thumb_container p {
+		display: block;
+		margin-top: .5em;
+		width: 83px;
+	}
 
 .adsense {
 	float: left;
+	width: 25%;
 }
-
-.active {
-	background: #ccc;
-}
+	
+	.adsense h3 {
+		border-bottom: 1px dotted #303030;
+		color: #92BEC7;
+		display: block;
+		font-size: 14px;
+		height: 46px;
+		margin: 0 0 1.5em;
+	
+	}
+	
+	.adsense h3 span {
+		display: block;
+		font-size: 28px;
+		margin-bottom: .5em;
+	}
 
 #big_thumb {
 	background: transparent url(/images/loader.gif) center center no-repeat;
-	border: 1px solid #ccc;
+	border: 1px solid #606060;
 	float: left;
 	width: 320px;
 	height: 480px;
@@ -138,17 +163,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thumb {
-	border: 1px solid #ccc;
+	border: 1px solid #404040;
 	padding: 5px;
 	float: left;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	cursor: pointer;
 }
+	
+	.thumb img {
+		background: transparent url(/images/loader.gif) center center no-repeat;
+		height: 125px;
+	}
 
-.thumb img {
-	background: transparent url(/images/loader.gif) center center no-repeat;
-	height: 138px;
+.active {
+	background: url(/images/colorbox/overlay.png) repeat;
+	border: 1px solid #45FEF6;
 }
 
 .nav {
@@ -165,6 +195,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav.main {
 	width: 20%;
 	text-align: right;
+}
+
+	.nav.main a {
+		color: #FF00AA;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	
+.external {
+	color: #AA00FF;
 }
 
 .nav.foot {
@@ -184,12 +224,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 5px;
 	margin-bottom: 1px;
 }
-
-.featured li img {
-	width: 50px;
-	float: left;
-	margin-right: 5px;
-}
+	
+	.featured li img {
+		width: 50px;
+		float: left;
+		margin-right: 5px;
+	}
 
 #contact {
 	display: block;
