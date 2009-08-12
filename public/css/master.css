@@ -8,6 +8,30 @@ body {
 	font-size: 12px;
 }
 
+.button {
+	color: #333;
+	background: url(/images/button.gif) ;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 1px solid #ccc;
+	padding: 4px 8px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	border: 1px solid #5d5d5d;
+}
+
+.button:active {
+	background: url(/images/button_active.gif) ;
+}
+
+
+.hidden {
+	display: none;
+}
+
 fieldset, input, textarea {
 	border: 1px solid #ccc;
 }
@@ -57,11 +81,16 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 }
 
-.big_thumb {
+.active {
+	background: #ccc;
+}
+
+#big_thumb {
+	background: transparent url(/images/loader.gif) center center no-repeat;
 	border: 1px solid #ccc;
 	float: left;
-	width: 235px;
-	height: 300px;
+	width: 320px;
+	height: 480px;
 	padding: 5px;
 }
 
@@ -71,10 +100,12 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 	margin-left: 10px;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 .thumb img {
-	width: 120px;
+	background: transparent url(/images/loader.gif) center center no-repeat;
+	height: 138px;
 }
 
 .nav {
