@@ -4,9 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>Application</title>
 	
-	<link type="text/css" href="css/master.css" rel="stylesheet" />
-	<link type="text/css" href="css/colorbox.css" rel="stylesheet" />
-	<link type="text/css" href="css/colorbox-ie.css" rel="stylesheet" />
+	<link type="text/css" href="/css/master.css" rel="stylesheet" />
+	<link type="text/css" href="/css/colorbox.css" rel="stylesheet" />
+	<link type="text/css" href="/css/colorbox-ie.css" rel="stylesheet" />
 	
 	<script type="text/javascript" src="/js/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
@@ -23,7 +23,84 @@
 
 <body>
 	<div id="wrapper">
+		<div id="header_wrapper">
+		<!-- Header Nav -->
+			<div class="constrain">
+				<h1>Logo</h1>
+				<ul class="nav social">
+					<li><script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=d2b68f4a-0afb-47c9-a2d2-43cdbb80de25&amp;type=website&amp;post_services=facebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Cwordpress%2Cstumbleupon%2Cybuzz%2Creddit%2Ctechnorati%2Cmixx%2Cblogger%2Ctypepad%2Cgoogle_bmarks%2Cwindows_live%2Cfark%2Cbus_exchange%2Cpropeller%2Cnewsvine%2Clinkedin"></script></li>
+				</ul>
+				<div class="clear"><!-- --></div>
+				<ul class="nav main">
+					<li><a href="#">FAQ</a></li>
+					<li><a class="external" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7432278">Donate</a></li>
+				</ul>
+				<div class="clear"><!-- --></div>
+			</div>
+		</div>
+		<!-- Content -->
 		<?= $this->layout()->content ?>
+		<!-- Footer -->
+		<div id="footer_wrapper">
+			<div class="constrain">
+				<ul class="featured">
+					<li>
+						<img src="/images/defalut.gif" alt="defalut" />
+						<p>Name</p>
+						<em>Title</em>
+						<div class="clear"><!-- --></div>
+					</li>
+					<li>
+						<img src="/images/defalut.gif" alt="defalut" />
+						<p>Name</p>
+						<em>Title</em>
+						<div class="clear"><!-- --></div>
+					</li>
+					<li>
+						<img src="/images/defalut.gif" alt="defalut" />
+						<p>Name</p>
+						<em>Title</em>
+						<div class="clear"><!-- --></div>
+					</li>
+				</ul>
+				<div class="adsense">
+					<img width="175" src="/images/adsense.png" alt="adsense" />
+				</div>
+				<form id="contact" action="#">
+					<fieldset>
+						<legend>Contact Us</legend>
+						<label for="first_name">First</label>
+						<input type="text" id="first_name" name="first_name" />
+						<label for="last_name">Last</label>
+						<input type="text" id="last_name" name="last_name" />
+						<label for="last_name">Email</label>
+						<input type="text" id="email" name="email" />
+						<label for="message">Message</label>
+						<textarea id="message" name="message"></textarea>
+						<input type="submit" id="submit" name="submit" value="submit" class="button"/>
+					</fieldset>
+				</form>
+				<div class="clear"><!-- --></div>
+				<ul class="nav foot">
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+				<div class="clear"><!-- --></div>
+				<p class="copyright">copyright</p>
+			</div>
+			<div class="hidden">
+		 		<div id="donate">
+		 			<p>Please Donate:</p>
+		 			<a class="button external" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7435401">Donate</a>
+		 			<p>Download Set:</p>
+		 			<a class="button" href="#">Download</a>
+		 			<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Illustrated Portland Bridge iPhone Wallpaper Set</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.illustratedportland.com" property="cc:attributionName" rel="cc:attributionURL">Jessica Tsuji, Kellan Craddock, &amp; Jerylyn Brei</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License</a>
+		 		</div>
+		 	</div>
+		</div>
+
 	</div>
 </body>
 </html>
