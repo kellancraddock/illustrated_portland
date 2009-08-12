@@ -1,12 +1,53 @@
-<!--Alerts-->
-<div class="constrain alert">
-	<?php
-	if ($this->alerts) {
-		foreach ($this->alerts as $alert) {
-			echo "<span>$alert<span>";
+<div id="content_wrapper">
+
+	<!--Alerts-->
+	<div id="alertMessage" class="constrain alert">
+		<?php
+		if ($this->alerts) {
+			echo "<h2>Sorry Your Message Could not be Sent.</h2>";
+			foreach ($this->alerts as $alert) {
+				echo "<span>$alert<span>";
+			}
+		} else {
+			echo "<h2>Thanks for the message!</h2>";
 		}
-	} else {
-		echo "<h3>Thanks for the message!</h3>";
-	}
-	?>
+		?>
+	</div>
+
+	<div class="constrain">
+		<div class="thumb_container">
+			<h2>Portland Bridges <span>{iPhone Wallpapers}</span></h2>
+			<img id="big_thumb" src="/images/burnside.jpg" alt="defalut" />
+			<div class="thumb active">
+				<img src="/images/burnside.jpg" alt="defalut" />
+				<p>Burnside Bridge</p>
+			</div>
+			<div class="thumb">
+				<img src="/images/freemont.jpg" alt="defalut" />
+				<p>Freemont Bridge</p>
+			</div>
+			<div class="thumb">
+				<img src="/images/hawthorne.jpg" alt="defalut" />
+				<p>Hawthorne Bridge</p>
+			</div>
+			<div class="thumb">
+				<img src="/images/marquam.jpg" alt="defalut" />
+				<p>Marquam Bridge</p>
+			</div>
+			<div class="thumb">
+				<img src="/images/stJohns.jpg" alt="defalut" />
+				<p>St. Johns Bridge</p>
+			</div>
+			<div class="thumb">
+				<img src="/images/image06.jpg" alt="defalut" />
+				<p>Steel Bridge</p>
+			</div>
+			<a href="#" class="button donate"><span>I Want This Set!</span>GET IT</a>
+			<div class="clear"><!-- --></div>
+		</div>
+		<div class="adsense">
+			<h3><span>Check Out</span>Some Related Links</h3>
+			<img width="225" src="/images/adsense.png" alt="adsense" />
+		</div>
+	</div>
 </div>
