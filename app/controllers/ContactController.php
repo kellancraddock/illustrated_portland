@@ -23,7 +23,7 @@
 				}
 			}
 			
-			$this->view->alert = $error;
+			$this->view->alerts = $error;
 		}
 		
 	}
