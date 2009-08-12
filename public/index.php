@@ -21,6 +21,8 @@ Zend_Loader::loadClass('Zend_View_Helper_Abstract');
 Zend_Loader::loadClass('Zend_View');
 Zend_Loader::loadClass('Zend_Session');
 Zend_Loader::loadClass('Zend_Session_Namespace');
+Zend_Loader::loadClass('Zend_Validate');
+Zend_Loader::loadClass('Zend_Validate_NotEmpty');
 Zend_Loader::loadClass('Zend_Layout');
 
 //StartMVC
