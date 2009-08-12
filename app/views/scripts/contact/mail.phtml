@@ -1,0 +1,12 @@
+<!--Alerts-->
+<div class="constrain alert">
+	<?php
+	if ($this->alerts) {
+		foreach ($this->alert as $alert) {
+			echo "<span>$alert<span>";
+		}
+	} else {
+		echo "<h3>Thanks for the message!</h3>";
+	}
+	?>
+</div>
