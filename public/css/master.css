@@ -1,12 +1,45 @@
 @charset "utf-8";
 /* Main Styles */
 
+/* -- reset -- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button,
+table, caption, tbody, tfoot, thead, tr, th, td, col {
+	background: transparent no-repeat 0 0;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	vertical-align: baseline;
+	}
+ol, ul { list-style: none; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table {	border-collapse: collapse; border-spacing: 0; width: 100%; }
+input, textarea { margin: 0; padding: 0; }
+em { font-style: italic; }
+object { display: block; }
+
+
 body {
+	color: #f0f0f0;
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Hevetica, "sans-serif";
 	font-size: 12px;
+	line-height: 10px;
 }
+
+a:link {color: #99FF00; text-decoration: none}
+a:visited {color: #99FF00;}
+a:hover,a:focus {color: #CCFF00; text-decoration: none;}
+a:active {}
 
 .button {
 	color: #333;
@@ -47,6 +80,7 @@ ul {
 }
 
 p {
+	line-height: inherit;
 	margin: 0;
 }
 
@@ -54,8 +88,16 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-#header_wrapper h1 {
-	float: left;
+#header_wrapper, #footer_wrapper {
+	background: #000;
+}
+
+	#header_wrapper h1 {
+		float: left;
+	}
+
+#content_wrapper {
+	background: #202020;
 }
 
 .copyright {
@@ -70,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 .constrain {
 	width: 900px;
 	margin: 0 auto;
+	padding: 1em 5em;
 }
 
 .thumb_container {
@@ -168,4 +211,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #contact label {
 	display: block;
+}
+
+/* -- clearing all floats --*/
+
+#content_wrapper:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
