@@ -43,21 +43,22 @@ a:active {}
 
 .button {
 	color: #333;
-	background: url(/images/button.gif) ;
+	background: url(/images/button2.gif) ;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
-	border: 1px solid #ccc;
+	border: 1px solid #45FEF6;
+	height: 42px;
 	padding: 4px 8px;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .button:hover {
-	border: 1px solid #5d5d5d;
+	border: 1px solid #0FE7F5;
 }
 
 .button:active {
-	background: url(/images/button_active.gif) ;
+	background: url(/images/button_active2.gif) ;
 }
 
 
@@ -102,8 +103,10 @@ h2 {
 }
 
 #content_wrapper {
-	background: #1c1c1c;
-	padding: 2em;
+	background: #141414 url(/images/stripeBG.png) top repeat-x;
+	border-bottom: 1px solid #1b1b1b;
+	border-top: 1px solid #222;
+	padding: 2em 0;
 }
 
 .copyright {
