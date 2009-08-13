@@ -38,7 +38,7 @@ body {
 }
 
 a:link {color: #45FEF6; text-decoration: none}
-a:visited {color: #45FEF6;}
+a:visited {color: #21617C;}
 a:hover,a:focus {color: #0FE7F5; text-decoration: none;}
 a:active {}
 
@@ -64,7 +64,7 @@ a:active {}
 	background: #9ae1ff url(/images/button_active2.gif) bottom repeat-x;
 }
 
-a.donate:link, a.download:link {
+a.donate:link, a.download:link, a.home:link {
 	color: #006a90;
 	float: left;
 	font-size: 45px;
@@ -75,6 +75,18 @@ a.donate:link, a.download:link {
 	margin-top: 19px;
 	text-align: center;
 	width: 288px;
+}
+
+a.file:link {
+	font-size: 38px;
+	line-height: 75px;
+	width: 455px;
+}
+
+a.home:link {
+	line-height: 75px;
+	font-size: 38px;
+	margin-left: 30px;
 }
 
 #colorbox a.donate:link, #colorbox a.download:link {
@@ -90,7 +102,7 @@ a.donate:link, a.download:link {
 		font-weight: normal;
 	}
 	
-	a.donate:hover, a.download:hover {
+	a.donate:hover, a.download:hover, a.home:hover {
 		color: #fa00a9;
 	}
 
@@ -291,6 +303,10 @@ h3 span {
 	float: left;
 }
 
+.download_container #creativeCommons {
+	margin-top: 30px;
+}
+
 .ccImg, .ccMeta {
 	display: block;
 	float: left;
@@ -367,7 +383,7 @@ h3 span {
 	.nav.main a:hover {
 		background: #82d8ff;
 		border-top: 1px solid #aae4ff;
-		color: #FF00AA;
+		color: #07709f;
 	}
 	
 .external {
