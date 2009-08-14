@@ -197,7 +197,6 @@ h2 {
 	.thumb_container p {
 		display: block;
 		margin-top: .5em;
-		width: 83px;
 	}
 
 .adsense {
@@ -297,11 +296,17 @@ h3 {
 	margin-left: 10px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	width: 83px;
 }
 	
 	.thumb img {
 		background: transparent url(/images/loader.gif) center center no-repeat;
 		height: 125px;
+	}
+	
+	.thumb .wiki img  {
+		background: none;
+		height: auto;
 	}
 
 .active {
@@ -454,6 +459,20 @@ h3 {
 #contact label {
 	display: block;
 	margin-bottom: 8px;
+}
+
+.faq_container {
+	float: left;
+	width: 75%;
+}
+
+.faq_container ul li strong {
+	color: #fa00a9;
+	font-size: 16px;
+}
+
+.faq_container ul li p {
+	margin: 15px 0;
 }
 
 /* -- clearing all floats --*/
