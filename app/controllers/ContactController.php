@@ -13,6 +13,15 @@
 			
 			$validatorChain = new Zend_Validate();
 			$validatorChain->addValidator(new Zend_Validate_NotEmpty());
+			$valid_email = new Zend_Validate_EmailAddress();
+			if ($valid_email->isValid($posts['Email'])) {
+				
+			} else {
+				foreach ($valid_email->getMessages() as $message) {
+					$error[] = "Email $message\n";
+				}
+			}
+			
 			foreach ($posts as $key => $post) {
 				if ($validatorChain->isValid($post)) {
 				
@@ -23,7 +32,19 @@
 				}
 			}
 			
-			$this->view->alerts = $error;
+			if (count($error) != 0) {
+				$this->view->alerts = $error;
+			} else {
+				$to      = 'illustratedpdx@gmail.com';
+				$subject = 'Email from Illustrated Portland';
+				$message = $posts['Message'];
+				$headers = "From: {$posts['First Name']} {$posts['Last Name']} <{$posts['Email']}>";
+				mail( $to, $subject, $message, $headers );
+				
+				//$this->view->alerts = array("Thank You! Your message has been sent.");
+			}
+			
+			
 		}
 		
 	}
