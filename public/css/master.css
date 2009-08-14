@@ -25,7 +25,7 @@ table {	border-collapse: collapse; border-spacing: 0; width: 100%; }
 input, textarea { margin: 0; padding: 0; }
 em { font-style: italic; }
 object { display: block; }
-
+/* -- reset -- */
 
 body {
 	background: #000;
@@ -37,74 +37,50 @@ body {
 	line-height: 10px;
 }
 
-a:link {color: #45FEF6; text-decoration: none}
+a {color: #45FEF6; text-decoration: none}
 a:visited {color: #21617C;}
 a:hover,a:focus {color: #0FE7F5; text-decoration: none;}
 a:active {}
 
 .button, .social {
 	color: #21617c;
+	display: block;
 	background: #b1f1ff url(/images/button2.gif) bottom repeat-x;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border: 1px solid #45FEF6;
 	font-weight: bold;
-	height: 32px;
-	padding: 4px 8px;
+	float: left;
+	padding: .5em;
 	text-decoration: none;
 	cursor: pointer;
-}
-
-.button:hover, .social:hover {
-	color: #1187b8;
-	border: 1px solid #0FE7F5;
-}
-
-.button:active, .social:active {
-	background: #9ae1ff url(/images/button_active2.gif) bottom repeat-x;
-}
-
-a.donate:link, a.download:link, a.home:link {
-	color: #006a90;
-	float: left;
-	font-size: 45px;
-	font-weight: bold;
-	height: 80px;
-	line-height: 34px;
-	margin-left: 10px;
-	margin-top: 19px;
 	text-align: center;
-	width: 288px;
 }
 
-a.file:link {
+.button.donate, .button.download {
+	float: left;
 	font-size: 38px;
-	line-height: 75px;
-	width: 455px;
+	margin-left: 10px;
+	line-height: normal;
+	width: 40%;
 }
 
-a.home:link {
-	line-height: 75px;
-	font-size: 38px;
-	margin-left: 30px;
-}
-
-#colorbox a.donate:link, #colorbox a.download:link {
+.button.donate span {
+	font-size: 17px;
 	display: block;
-	height: 45px;
-	line-height: 40px;
-	margin-bottom: .8em;
 }
-	
-	a.donate span {
-		font-size: 18px;
-		display: block;
-		font-weight: normal;
-	}
-	
-	a.donate:hover, a.download:hover, a.home:hover {
-		color: #fa00a9;
-	}
+
+#donate .button.donate, #donate .button.download {
+	float: none;
+	width: 88%;
+	margin-left: 0;
+	display: block;
+	margin: .5em 0;
+}
+
+.button:hover {
+	color: #fa00a9;
+}
 
 .hidden {
 	display: none;
@@ -160,9 +136,8 @@ h2 {
 	border-bottom: 1px dotted #303030;
 	display: block;
 	font-size: 42px;
-	height: 46px;
-	margin: 0 0 .5em;
-	width: 96%;
+	line-height: 52px;
+	margin-bottom: .5em;
 }
 
 	h2 span {
@@ -259,15 +234,7 @@ h3 {
 	color: #b0d4de;
 	display: block;
 	font-size: 14px;
-	height: 46px;
-	margin: 0 0 1.5em;
 
-}
-
-h3 span {
-	display: block;
-	font-size: 28px;
-	margin-bottom: .5em;
 }
 
 #footer_wrapper .adsense h3 {
@@ -281,20 +248,12 @@ h3 span {
 }
 
 #donate {
-	margin: 2em auto;
-	width: 77%;
+	margin: 2em;
 }
 
 #colorbox h3 {
-	border-bottom: none;
-	float: left;
-	margin: 0 0 0 1em;
-	font-weight: normal; 
-	line-height: 14px;
-}
-
-#colorbox h3 span {
-	font-weight: bold; 
+	margin-bottom: .5em;
+	font-size: 18px;
 }
 
 #creativeCommons {
@@ -305,6 +264,12 @@ h3 span {
 
 .download_container #creativeCommons {
 	margin-top: 30px;
+}
+
+.download_container .button {
+	padding: 1em;
+	font-size: 18px;
+	margin-right: 1em;
 }
 
 .ccImg, .ccMeta {
@@ -364,20 +329,24 @@ h3 span {
 .nav.main li {
 	display: block;
 	float: right;
-	margin-left: 20px;
+	margin-left: 3px;
 	text-align: center;
 }
 
 	.nav.main a {
 		color: #fff;
-		background: #07709f;
+		background: #5dbce3 url(/images/tabs_bg.gif) bottom repeat-x;
 		border-top: 1px solid #0c92cf;
-		border-bottom: 1px solid #136a92;
+		border-bottom: 1px solid #333;
+		-moz-border-radius-topleft: 15px;
+		-moz-border-radius-topright: 15px;
+		-webkit-border-top-right-radius: 15px;
+		-webkit-border-top-left-radius: 15px;
 		display: block;
 		width: 160px;
 		font-size: 24px;
 		font-weight: bold;
-		padding: .8em;
+		padding: .7em;
 	}
 
 	.nav.main a:hover {
