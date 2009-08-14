@@ -203,6 +203,14 @@ h2 {
 	float: left;
 	width: 25%;
 }
+
+.adsense h3 {
+	color: #ccc;
+	padding-bottom: 5px;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: right;
+}
 	
 	#footer_wrapper .adsense {
 		margin-right: 1.6em;
@@ -239,6 +247,7 @@ h3 {
 #footer_wrapper .adsense h3 {
 	font-weight: normal; 
 	font-size: 11px; 
+	line-height: inherit;
 }
 
 #footer_wrapper .adsense h3 span {
