@@ -23,6 +23,7 @@ Zend_Loader::loadClass('Zend_Session');
 Zend_Loader::loadClass('Zend_Session_Namespace');
 Zend_Loader::loadClass('Zend_Validate');
 Zend_Loader::loadClass('Zend_Validate_NotEmpty');
+Zend_Loader::loadClass('Zend_Validate_EmailAddress');
 Zend_Loader::loadClass('Zend_Layout');
 
 //StartMVC

@@ -156,7 +156,7 @@ h2 {
 #alertMessage h2 {
 	color: #ff9600;
 	font-size: 38px;
-	height: 32px;
+	/* height: 32px; */
 	width: 100%;
 }
 
