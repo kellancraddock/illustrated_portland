@@ -56,6 +56,12 @@ a:active {}
 	cursor: pointer;
 	text-align: center;
 }
+	
+	.social .sharethis {
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		padding: 0;
+	}
 
 .button.donate, .button.download {
 	float: left;
@@ -228,10 +234,6 @@ h2 {
 		margin-right: 1.6em;
 		width: auto;
 	}
-	
-.social .sharethis {
-	height: 40px;
-}
 
 .social li {
 	float: left;
@@ -240,7 +242,7 @@ h2 {
 	
 #sharethis_0 {
 	display: block;
-	margin: 1em 1.5em;
+	margin: .2em .5em;
 }
 	
 .stbuttontext {
