@@ -42,7 +42,7 @@ a:visited {color: #21617C;}
 a:hover,a:focus {color: #0FE7F5; text-decoration: none;}
 a:active {}
 
-.button, .social {
+.button, .social .sharethis {
 	color: #21617c;
 	display: block;
 	background: #b1f1ff url(/images/button2.gif) bottom repeat-x;
@@ -199,6 +199,11 @@ h2 {
 		margin-top: .5em;
 	}
 
+.setMeta {
+	display: block;
+	margin-bottom: 3em;
+}
+
 .adsense {
 	float: left;
 	width: 25%;
@@ -206,20 +211,31 @@ h2 {
 }
 
 .adsense h3 {
+	border-bottom: none;
 	color: #ccc;
-	padding-bottom: 5px;
-	font-size: 18px;
-	line-height: 28px;
+	font-size: 15px;
+	line-height: 26px;
+	margin-bottom: 6px;
 	text-align: right;
 }
+
+	.adsense h3 span {
+		display: block;
+		font-size: 28px;
+	}
 	
 	#footer_wrapper .adsense {
 		margin-right: 1.6em;
 		width: auto;
 	}
 	
-.social {
+.social .sharethis {
 	height: 40px;
+}
+
+.social li {
+	float: left;
+	margin-left: 1em;
 }
 	
 #sharethis_0 {
@@ -233,7 +249,7 @@ h2 {
 	font-weight: bold;
 }
 	
-	.social:hover .stbuttontext {
+	.social .sharethis:hover .stbuttontext {
 		color: #fa00a9;
 	}
 	
@@ -246,9 +262,10 @@ h3 {
 }
 
 #footer_wrapper .adsense h3 {
+	color: #47C5FD;
 	font-weight: normal; 
-	font-size: 11px; 
-	line-height: inherit;
+	font-size: 13px; 
+	font-weight: bold;
 }
 
 #footer_wrapper .adsense h3 span {
@@ -312,6 +329,11 @@ h3 {
 	.thumb img {
 		background: transparent url(/images/loader.gif) center center no-repeat;
 		height: 125px;
+	}
+	
+	.thumb .wiki {
+		display: block;
+		float: right;
 	}
 	
 	.thumb .wiki img  {
@@ -487,7 +509,7 @@ h3 {
 
 /* -- clearing all floats --*/
 
-#content_wrapper:after, #donate:after, #creativeCommons:after, .nav.main:after, #header_wrapper:after {
+#content_wrapper:after, #donate:after, #creativeCommons:after, .nav.main:after, #header_wrapper:after, .thumb:after {
 	clear: both;
 	content: ".";
 	display: block;
