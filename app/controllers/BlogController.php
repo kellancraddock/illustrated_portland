@@ -34,7 +34,7 @@
 
 			$feed['title']        = "IllustratedPortland.com RSS Feed";
 
-			$feed['link']         = 'http://localhost:8888/blog/rss';
+			$feed['link']         = 'http://www.illustratedportland/blog/rss';
 
 			$feed['charset']   = 'utf-8';
 
