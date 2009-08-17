@@ -25,6 +25,7 @@ Zend_Loader::loadClass('Zend_Validate');
 Zend_Loader::loadClass('Zend_Validate_NotEmpty');
 Zend_Loader::loadClass('Zend_Validate_EmailAddress');
 Zend_Loader::loadClass('Zend_Layout');
+Zend_Loader::loadClass('Zend_Feed');
 
 //StartMVC
 $mvc_options = array(
@@ -40,7 +41,7 @@ $config = new Zend_Config(
 			'adapter' => 'Mysqli',
 			'params' => array(
 				'host' => 'localhost',
-				'dbname' => 'dbname',
+				'dbname' => 'illustrated_portland',
 				'username' => 'root',
 				'password' => 'root',
 			)
@@ -69,6 +70,6 @@ $front = Zend_Controller_Front::getInstance();
 
 //Set Controllers
 $front->setControllerDirectory('../app/controllers');
-$front->throwExceptions(false);
+$front->throwExceptions(true);
 $front->dispatch();
 ?>

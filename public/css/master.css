@@ -485,6 +485,24 @@ h3 {
 	margin: 15px 0;
 }
 
+.rss {
+	display: block;
+	background: transparent url(/images/rss.png) no-repeat;
+	padding: 5px;
+	padding-left: 25px;
+}
+
+.blog h3 {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+}
+
+.blog p {
+	padding-top: 10px;
+}
+
 /* -- clearing all floats --*/
 
 #content_wrapper:after, #donate:after, #creativeCommons:after, .nav.main:after, #header_wrapper:after {
