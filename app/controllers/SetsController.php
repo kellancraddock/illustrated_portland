@@ -9,8 +9,11 @@
 		public function downloadAction()
 		{
 			
-			if ($this->_request->getParam('donated'))
+			if ($this->_request->getParam('donated')) {
 				$this->view->alert = "Thank You For Donating";
+			}
+				
+			$this->_helper->layout->setLayout('splittest');
 		}
 		
 	}
