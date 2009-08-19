@@ -9,12 +9,12 @@
 		
 		public function indexAction()
 		{
-
+			$this->_helper->layout->setLayout('splittest');
 		}
 		
 		public function homeAction()
 		{
-			
+			$this->_helper->layout->setLayout('splittest');
 		}
 		
 		
