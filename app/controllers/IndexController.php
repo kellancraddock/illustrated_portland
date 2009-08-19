@@ -12,6 +12,12 @@
 
 		}
 		
+		public function homeAction()
+		{
+			
+		}
+		
+		
 	}
 	
 ?>
