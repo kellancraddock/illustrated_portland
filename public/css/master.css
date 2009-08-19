@@ -534,3 +534,16 @@ h3 {
 	height: 0;
 	visibility: hidden;
 }
+
+/* !Split Test */
+.home .button, .home .social, .home .sharethis {
+	background: #ff9419 url(/images/button3.gif) top repeat-x;
+	border: 1px solid #d87911;
+	color: #993b0c;
+}
+
+.home .thumb {
+	border: 1px solid purple;
+	color: #fff;
+	background: #b1f1ff url(/images/button4.gif) bottom repeat-x;
+}
