@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 /* Main Styles */
 
@@ -69,6 +70,7 @@ a:active {}
 	margin-left: 10px;
 	line-height: normal;
 	width: 40%;
+	margin-bottom: 15px;
 }
 
 .button.donate span {
@@ -175,7 +177,7 @@ h2 {
 	background: #141414 url(/images/stripeBG.png) top repeat-x;
 	border-bottom: 1px solid #1b1b1b;
 	border-top: 1px solid #222;
-	padding: 6em 0 2em;
+	padding: 1em 0 2em;
 }
 
 .copyright {
