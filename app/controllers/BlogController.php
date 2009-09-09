@@ -34,7 +34,7 @@
 
 			$feed['title']        = "IllustratedPortland.com RSS Feed";
 
-			$feed['link']         = 'http://www.illustratedportland/blog/rss';
+			$feed['link']         = 'feed://illustratedportland.com/blog/rss';
 
 			$feed['charset']   = 'utf-8';
 
@@ -50,9 +50,13 @@
 				
 				$entry['title'] = $story['title']; //The title that will be displayed for the entry
 				
-				$entry['link'] = '/blog/single/id/' . $story['id']; //The url of the entry
+				$entry['guide'] = $story['id'];
 				
-				$entry['url'] = '/blog/single/id/' . $story['id']; //The url of the entry
+				$entry['published'] = $story['date'];
+				
+				$entry['link'] = 'http://illustratedportland.com/blog/single/id/' . $story['id']; //The url of the entry
+				
+				$entry['url'] = 'http://illustratedportland.com/blog/single/id/' . $story['id']; //The url of the entry
 				
 				$entry['description'] = $story['description']; //Short description of the entry
 				
